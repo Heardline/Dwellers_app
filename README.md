@@ -24,7 +24,8 @@
 - Сервисы. Список услуг для жителей. Внутренняя реклама.
 ## Технический стек
 - Python: Django + telegramAPI
-- DB: Clickhouse
+- DB: Postgres
+- Для аналитики ClickHouse(для дешборда)
 
 
 
