@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'neighbour'
+    'neighbour',
+    'bot'
 ]
 
 MIDDLEWARE = [
