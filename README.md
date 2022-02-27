@@ -36,7 +36,7 @@
 - - DB: PostgreSQL + Redis
 - - Aiogram - телеграм
 - Fronted: 
-- - React + JavaScript
+- - Flutter(dart)
 - Для аналитики ClickHouse(дешборд) /* Для практики своих навыков
 
 ## Чему я планирую научиться?
