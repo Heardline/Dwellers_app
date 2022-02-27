@@ -12,7 +12,7 @@ from django.core.asgi import get_asgi_application
 from dotenv import load_dotenv
 
 from apps.core.web.middlewares import InjectMiddleware
-from config.apps import register_apps
+from bot.handlers import register_handlers
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -44,7 +44,7 @@ class MyBot:
 
     @staticmethod
     async def on_startup(dp: Dispatcher):
-        pass
+        await register_handlers(dp)
 
     @staticmethod
     async def on_shutdown(dp: Dispatcher):
