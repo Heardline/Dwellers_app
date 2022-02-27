@@ -1,4 +1,4 @@
-
+from aiogram import Bot, Dispatcher
 from .auth import start
 
 def handlers(dp: Dispatcher):

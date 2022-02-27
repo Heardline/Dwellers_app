@@ -132,6 +132,8 @@ USE_TZ = False
 
 REDIS_HOST = os.getenv("REDIS_HOST") or "localhost"
 REDIS_PORT = os.getenv("REDIS_PORT") or 6379
+REDIS_DB = os.getenv('REDIS_DB') or 'db_django'
+REDIS_PASSWORD = os.getenv('REDIS_PASSWORD') or ''
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
