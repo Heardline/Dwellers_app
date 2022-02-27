@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'neighbour'
 ]
 
 MIDDLEWARE = [
@@ -90,9 +91,9 @@ WSGI_APPLICATION = 'dweller.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": os.getenv("POSTGRES_DB") or "dweller",
+        "NAME": os.getenv("POSTGRES_DB") or "db_django",
         "USER": os.getenv("POSTGRES_USER") or "postgres",
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD") or "",
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD") or "6869",
         "HOST": os.getenv("POSTGRES_HOST") or "localhost",
         "PORT": os.getenv("POSTGRES_PORT") or 5432,
     }
@@ -144,5 +145,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = (
-       'localhost:3000',
+       'http://127.0.0.1:3000',
 )
