@@ -15,3 +15,4 @@ logs/
 celerybeat-schedule                                                                     
 .ipynb_checkpoints
 env/
+.vscode/launch.json
