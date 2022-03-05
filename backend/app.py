@@ -8,7 +8,7 @@ from pathlib import Path
 import uvicorn
 from config.settings import *
 from aiogram import Bot, Dispatcher, executor
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from aiogram.contrib.fsm_storage.redis import RedisStorage
 from django.core.asgi import get_asgi_application
 
 

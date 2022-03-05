@@ -18,10 +18,8 @@ from django.urls import path, include
 from rest_framework import routers
 from neighbour import views
 
-router = routers.DefaultRouter()
-router.register(r'Users', views.UserView, 'user')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('api/', include('neighbour.urls')),
 ]
