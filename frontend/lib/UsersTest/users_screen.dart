@@ -3,37 +3,19 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:http/http.dart';
 import 'package:flutter/material.dart';
-import 'package:frontend/models/user.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'package:frontend/UsersTest/user.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class UsersScreen extends StatefulWidget {
+  const UsersScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
-    );
-  }
+  State<UsersScreen> createState() => _UsersScreenState();
 }
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+class _UsersScreenState extends State<UsersScreen> {
   late Future<List<User>> users;
-  final usersListKey = GlobalKey<_HomeScreenState>();
+  final usersListKey = GlobalKey<_UsersScreenState>();
 
   @override
   void initState() {
@@ -88,5 +70,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
-/* Функция получения пользователей */
