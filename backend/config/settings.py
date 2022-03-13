@@ -51,7 +51,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'neighbour',
-    'bot'
+    'bot',
+    'social',
+    'payments',
+    'authe'
 ]
 
 MIDDLEWARE = [
