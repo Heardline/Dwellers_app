@@ -10,7 +10,7 @@ class User(models.Model):
     slug = models.CharField(max_length=32, unique=True)
     address =  models.TextField(blank=True, null=True)
     bio = models.CharField(max_length=128,null=True)
-    secret_hash = models.CharField(max_length=24, unique=True)
+    #secret_hash = models.CharField(max_length=24, unique=True)
 
     telegram_id = models.CharField(max_length=128, null=True)
     telegram_data = models.JSONField(null=True)
