@@ -3,14 +3,11 @@ click==8.0.4
 Django
 django-cors-headers
 djangorestframework
-frozenlist==1.3.0
+frozenlist
 h11==0.13.0
 idna==3.3
 multidict==6.0.2
-psycopg2==2.9.3
+psycopg2
 pytz==2021.3
-slugify==0.0.1
-sqlparse==0.4.2
-typing-extensions==4.1.1
-yarl==1.7.2
+
 
