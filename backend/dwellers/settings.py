@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'authentication',
+    'billing',
+    'feed',
+    'profiles',
+    'services',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +74,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'dwellers.wsgi.application'
 
+
+TELEGRAM_BOT_TOKEN = ''
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
